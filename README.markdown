@@ -34,5 +34,5 @@ The first time the Makefile won't exist yet, so you'll have to run:
     python code/metamake.py > Makefile
 
 -- 
-Aaron Swartz: http://www.aaronsw.com/
+Aaron Swartz: http://www.aaronsw.com/  
 email: me@aaronsw.com
