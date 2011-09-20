@@ -3,14 +3,8 @@ usable by anyone but extreme geeks, but here it is if you're interested.
 
 ## Install
 
-cd /path/to/weblog
-mkdir code
-cd code
-# [get Markdown.pl]
-wget http://www.aaronsw.com/weblog/code/markdown.py
-wget http://www.aaronsw.com/weblog/code/generator.py
-wget http://www.aaronsw.com/weblog/code/generator.py
-cd ..
+    cd /path/to/weblog
+    git clone git@github.com:aaronsw/metamake.git code
 
 ## Configure
 
@@ -25,19 +19,19 @@ multi-entry templates have these inside a list named entries.
 
 ## Post
 
-$ cat > _postname.txt
-# The Truth About Purple
-
-Through copious research I have discovered that purple is not really a color.
-Call Dan Rather!
-
-^D
-$ echo postname >> list
-$ make
+    $ cat > _postname.txt
+    # The Truth About Purple
+    
+    Through copious research I have discovered that purple is not really a color.
+    Call Dan Rather!
+    
+    ^D
+    $ echo postname >> list
+    $ make
 
 The first time the Makefile won't exist yet, so you'll have to run:
 
-python code/metamake.py > Makefile
+    python code/metamake.py > Makefile
 
 -- 
 Aaron Swartz: http://www.aaronsw.com/
